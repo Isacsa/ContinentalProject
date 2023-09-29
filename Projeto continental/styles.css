@@ -1,0 +1,121 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #FFA500; /* alterado para #FFA500 */
+  color: #000; /* alterado para #000 */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.5s ease;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: #000; /* alterado para #000 */
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 5px #FFA500; /* alterado para #FFA500 */
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#companyLogo {
+  width: 80px;
+  height: 40px;
+  background: #FFA500; /* alterado para #FFA500 */
+}
+
+h1 {
+  color: #FFA500; /* alterado para #FFA500 */
+  margin: 0;
+  transition: color 0.5s ease;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+
+.input-group label {
+  color: #FFA500; /* alterado para #FFA500 */
+  margin-bottom: 0.25em;
+  transition: color 0.5s ease;
+}
+
+.input-group input,
+.input-group select {
+  padding: 0.25em;
+  border-radius: 2px;
+  border: 1px solid #FFA500; /* alterado para #FFA500 */
+  background-color: #000; /* alterado para #000 */
+  color: #FFA500; /* alterado para #FFA500 */
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.button-group button {
+  padding: 0.25em 0.5em;
+  border-radius: 2px;
+  border: none;
+  background: #FFA500; /* alterado para #FFA500 */
+  color: #000; /* alterado para #000 */
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.button-group button:disabled {
+  background: #666;
+}
+
+#counter, #timer {
+  color: #FFA500; /* alterado para #FFA500 */
+  transition: color 0.5s ease;
+}
+
+.round-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #FFA500; /* alterado para #FFA500 */
+  color: #000; /* alterado para #000 */
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#timeListContainer, #lapTimesContainer {
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 2px;
+  border: 1px solid #FFA500; /* alterado para #FFA500 */
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #000; 
+  color: #FFA500; 
+}
+
+#timeListContainer::-webkit-scrollbar,
+#lapTimesContainer::-webkit-scrollbar {
+width: 5px;
+}
+
+#timeListContainer::-webkit-scrollbar-thumb,
+#lapTimesContainer::-webkit-scrollbar-thumb {
+background: #FFA500; /* alterado para #FFA500 */
+}
+
+#timeListContainer::-webkit-scrollbar-track,
+#lapTimesContainer::-webkit-scrollbar-track {
+background: #000; /* alterado para #000 */
+}
